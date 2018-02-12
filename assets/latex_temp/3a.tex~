@@ -1,0 +1,31 @@
+\documentclass{article}
+\usepackage{pgfplots, tikz}
+\usetikzlibrary{positioning, calc, plotmarks}
+\usepackage[nomessages]{fp}
+
+\begin{document}
+
+\begin{tikzpicture}[scale=0.1]
+\def\g{-9.8} %gravity
+\def\v{40} %velocity
+\def\ang{30} %angle
+\def\s{0.1}
+\FPeval{\vx}{v*cos(ang*pi/180)}
+\FPeval{\vy}{v*sin(ang*pi/180)}
+\FPeval{\first}{tan(ang*pi/180)}
+\FPeval{\second}{g/(2*(v*cos(ang*pi/180))^2) }
+
+\draw[dashed, domain=0.:50, samples=100]
+plot(\x, {\first*\x+\second*\x*\x});
+
+%Building
+\draw[fill=white](50,0) rectangle (55,30);
+\draw[thick, ->] (0,0) -- (0.3*\vx, 0.3*\vy) node[above]{v};
+\draw[dashed] (0,0) -- (0.15*\vx, 0) node[below]{$v_x$} -- (0.3*\vx,0) -- (0.3*\vx,0.15*\vy)
+node[right]{$v_y$} -- (0.3*\vx, 0.3*\vy);
+\draw[|-|] (1,-1) -- (25, -1) node[above]{x} -- (49,-1);
+
+\end{tikzpicture}
+
+
+\end{document}

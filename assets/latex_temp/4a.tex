@@ -1,0 +1,20 @@
+\documentclass{article}
+
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usetikzlibrary{calc}
+\pgfplotsset{my style/.append style={axis x line=middle, axis y line=middle}}
+
+\begin{document}
+
+\begin{tikzpicture}
+  \begin{axis}[xmin=0, xmax=10, ymin=0, ymax=4, ylabel={Normal Force (N)}, xlabel={$time (s)$}]
+    \addplot[domain=0:2] {3};
+    \addplot[domain=2:4] {2};
+    \addplot[domain=4:6] {3};
+    \addplot[domain=6:10] {3.5};
+  \end{axis}
+\end{tikzpicture}
+
+
+\end{document}

@@ -20,3 +20,5 @@ This will be the area where all of the answers to discussions will be posted, so
 [Discussion 7b]({{ "/assets/D-7b.pdf" | absolute_url }})
 
 [Discussion 8a]({{ "/assets/D-8a.pdf" | absolute_url }})
+
+[Discussion 8b]({{ "/assets/D-8b.pdf" | absolute_url }})

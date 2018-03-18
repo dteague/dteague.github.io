@@ -7,6 +7,8 @@ This will be the area where all of the answers to discussions will be posted, so
 
 [Error Cheat Sheet]({{ "/assets/Error.pdf" | absolute_url }})
 
+[Test 2 Review Sheet]({{ "/assets/review2.pdf" | absolute_url }})
+
 [Discussion 5a]({{ "/assets/D-5a.pdf" | absolute_url }})
 
 [Discussion 5b]({{ "/assets/D-5b.pdf" | absolute_url }})
